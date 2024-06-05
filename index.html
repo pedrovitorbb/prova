@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"> </script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de Notas</h2>
+        <form id="formNotas">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" value="Pedro Baier" readonly>
+            </div>
+            <div class="form-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" value="202415473" readonly>
+            </div>
+            <div class="form-group">
+                <label for="nota1">Nota do 1º Bimestre:</label>
+                <input type="number" id="nota1" value="9.6" step="0.01" readonly>
+            </div>
+            <div class="form-group">
+                <label for="nota2">Nota do 2º Bimestre:</label>
+                <input type="number" id="nota2" value="9.0" step="0.01" readonly>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="preencherTabela()">Preencher Tabela</button>
+            </div>
+        </form>
+
+        <h2>Informações do Estudante</h2>
+        <table id="tabelaInfo">
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Nota 1º Bimestre</th>
+                <th>Nota 2º Bimestre</th>
+            </tr>
+        </table>
+
+        <h2>Média e Status</h2>
+        <table id="tabelaMedia">
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Média</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </div>
+ </html>
