@@ -1,50 +1,111 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
 }
+
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.form-group {
-    margin-bottom: 15px;
+
+h1, h2 {
+    margin-top: 20px;
+    text-align: center;
 }
-.form-group label {
+
+label {
     display: block;
     margin-bottom: 5px;
+    color: #ccc;
 }
-.form-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-.form-group button {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: #fff;
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin-bottom: 10px;
     border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+}
+
+button {
+    background-color: #e50914;
     cursor: pointer;
 }
-.form-group button:hover {
-    background-color: #218838;
+
+button:hover {
+    background-color: #ff0033;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #333;
 }
+
 th, td {
-    padding: 10px;
-    text-align: center;
+    padding: 8px; /* Reduzindo o padding para um visual mais compacto */
+    text-align: left;
 }
+
 th {
-    background-color: #f2f2f2;
+    background-color: #e50914;
+    color: #fff;
+}
+
+/* Redimensionando as tabelas */
+#tabelaInfo, #tabelaMedia {
+    max-width: 600px; /* Reduzindo a largura máxima */
+    margin: 0 auto; /* Centralizando na página */
+}
+
+/* Estilizando as linhas pares das tabelas */
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+/* Estilizando o hover nas células das tabelas */
+table tr:hover td {
+    background-color: #444;
+}
+
+.fadeIn {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container {
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centralizando horizontalmente */
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adicionando uma sombra */
 }
